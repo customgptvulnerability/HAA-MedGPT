@@ -20,9 +20,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from seleniumbase import Driver
 
-policy_excel_path = r"C:\Users\XXXXXXXX\Healthcare GPT Assessment\Description_Context for Misuse of Med-LLMs.xlsx"
-metadata_json_path = r"C:\Users\XXXXXXXXXXX\Healthcare GPT Assessment\Bottom_250_gpt_metadata.json"
-output_excel_path = r"C:\Users\XXXXXXXXXXXXX\Healthcare GPT Assessment\gpt_metadata_output_MedLLM_processed_test.xlsx"
+policy_excel_path = r"Your Policy Statement Excel Path"
+metadata_json_path = r"Your JSON Path"
+output_excel_path = r"Your Output Excel Path"
 sheet_name = "Bottom 250"
 chatgpt_url = "https://chatgpt.com/"
 output_start_col = 29  
