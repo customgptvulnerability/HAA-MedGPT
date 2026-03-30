@@ -11,8 +11,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from seleniumbase import Driver
 
-keyword_file_path = "C:/Users/XXXXXX/Healthcare GPT Assessment/healthcare_gpt_search_keywords_2.txt"
-output_file_path = "C:/Users/XXXXXX/Healthcare GPT Assessment/gpt_metadata_output.json"
+keyword_file_path = "Your txt Path"
+output_file_path = "Your JSON path"
 gpt_store_url = "https://chatgpt.com/gpts"
 login_url = "https://auth0.openai.com/u/login/password?state=hKFo2SBtbFFXQmhscnZVcWxtcnV6VFVWazhGanhUTHJFWi1NOaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFZ5XzZROEVMYlZKbWdmbE1POU5PZzYyakVMaGZZenV0o2NpZNkgVGRKSWNiZTE2V29USHROOTVueXl3aDVFNHlPbzZJdEc"
 
