@@ -15,9 +15,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from seleniumbase import Driver
 
-qa_jsonl_path = r"C:\Users\XXXXXXXXX\Healthcare GPT Assessment\test.jsonl"
-excel_path = r"C:\Users\XXXXXXXXX\Healthcare GPT Assessment\gpt_metadata_output_MedLLM_processed_0.xlsx"
-json_output_path = r"C:\Users\XXXXXXXXX\Healthcare GPT Assessment\gpt_responses_bottom_250_1.json"
+qa_jsonl_path = r"Your JSONL Path"
+excel_path = r"Your Excel Path"
+json_output_path = r"Your Output JSON Path"
 sheet_name = "Bottom 250"
 
 login_url = "https://auth0.openai.com/u/login/password?state=hKFo2SBtbFFXQmhscnZVcWxtcnV6VFVWazhGanhUTHJFWi1NOaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFZ5XzZROEVMYlZKbWdmbE1POU5PZzYyakVMaGZZenV0o2NpZNkgVGRKSWNiZTE2V29USHROOTVueXl3aDVFNHlPbzZJdEc"
