@@ -10,8 +10,8 @@ import random
 from pathlib import Path
 from typing import List, Dict, Tuple
 
-BASE_DIR = r"C:\Users\XXXXXXXXXXXXXXXXXXXX\Healthcare GPT Assessment\Privacy Policy Statements"
-REFERENCE_NAME_CONTAINS = "openai privacy policy"  # case-insensitive substring for reference file
+BASE_DIR = r"Your Policy Statement Path"
+REFERENCE_NAME_CONTAINS = "openai privacy policy"  
 OUTPUT_CSV = "privacy_compliance_scores.csv"
 ENCODINGS_TO_TRY = ("utf-8", "utf-8-sig", "cp1252", "latin-1")
 BOOTSTRAP_CHUNKS = 6          # split candidate into this many contiguous chunks (if long enough)
@@ -252,7 +252,6 @@ def score_candidate(reference_text: str, candidate_text: str) -> Dict[str, float
     ref_tokens = tokenize_words(reference_text)
     cand_tokens = tokenize_words(candidate_text)
 
-    # base signals
     ref_sh3 = make_shingles(ref_tokens, 3)
     cand_sh3 = make_shingles(cand_tokens, 3)
     sim_k3 = jaccard(ref_sh3, cand_sh3)
@@ -347,7 +346,7 @@ def main():
                     scores["missing_topics"],
                 ])
                 print(
-                    f"✓ {cand.name} → Compliance: {scores['compliance_score']:.3f} | "
+                    f"{cand.name} → Compliance: {scores['compliance_score']:.3f} | "
                     f"Confidence: {scores['confidence_score']:.3f} ({scores['confidence_note']})"
                 )
             except Exception as e:
