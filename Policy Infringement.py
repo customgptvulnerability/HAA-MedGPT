@@ -5,7 +5,7 @@
 #################################################################################################################################################
 #-------------------- This is a scoring system for determining Abuse in Med-LLMs. 
 #-------------------  It takes the model name, description, and conversation starters as inputs, 
-#-------------------- and then a set of OpenAI's policies, scenarios, and context. The evaluation was conducted using GPT-4o.--------------------# 
+#-------------------- and then a set of OpenAI's policies, scenarios, and context. The evaluation was conducted using Gemini 3.5 Pro.--------------------# 
 ##################################################################################################################################################
 
 
